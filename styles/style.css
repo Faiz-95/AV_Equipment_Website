@@ -1,0 +1,138 @@
+/*
+author: Faiz Syed Ibrahim
+created: 15/03/2021
+description: style sheet for Assignment Part 1
+*/
+
+
+/*
+The below block of code is the CSS Styling used on all HTML pages
+*/
+
+* {font-family : calabri, sans-serif ; color: #000000;}
+body {background : url(images/background.jpeg);}
+.text_info {text-align: justify; line-height : 1.2; font-size: 110% ;}
+h1 {color : rgb(99,47,242) ; text-align: center; background-color: black ; padding: 15px ;}
+h2 {color : rgb(99,47,242);}
+h3 {color : rgb(185,0,0);}
+
+header {background-color: rgb(126,223,251);}
+#navv {text-align: center;}
+nav a {color : rgb(112,233,71) ; background-color: black ; padding: 5px ; padding-left: 20px ; padding-right: 20px;}
+footer {font-size : 80% ; color : rgb(112,233,71) ; text-align: center; background-color: black ; padding: 5px ;}
+
+#logo {border-radius : 10px ;  width : 20% ; height: 20% ;  display : block; margin-left : auto; margin-right : auto; }
+hr {clear: both; border-top: 3px dashed ;}
+ul {list-style-type: square;}
+table {float: left; border-collapse: collapse; table-layout: fixed; padding: 5px; margin: 10px; background: #ffffff;}
+td {border: 2.5px solid black; padding: 5px;}
+th,.time_day, .prod_type {border: 2.5px solid black; padding: 5px; font-weight: bold ; text-align: center; background-color: #93d0f1;}
+figcaption {clear: both; text-align: center; width: 75%;}
+
+/*____________________________________________________________________________________________________________________________*/
+
+/*
+The below block of code is the CSS Styling used specifically in index.html */
+
+#AVE {float : right; width: 25%; margin : 0px 20px 0px 30px;}
+
+/*____________________________________________________________________________________________________________________________*/
+
+/*
+The below block of code is the CSS Styling used specifically in product.html */
+
+.products {float: left; width : 27%; font-size: 120%; text-align: center; padding: 10px 20px; margin: 20px; border: 4px solid black;
+		   position: relative;}
+.image {display: block; margin-left: auto; margin-right: auto;}
+
+.container {position: relative;}
+.overlay {position: absolute; bottom: 0; left: 100%; right: 0; background-color: #375b93; overflow: hidden; width: 0; height: 100%; transition: .5s ease;}
+.container:hover .overlay {width: 100%; left: 0;}
+.text {white-space: nowrap; color: white;font-size: 20px; position: absolute; overflow: hidden; top: 50%; left: 50%; 
+	   transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%);}
+
+#imgprj {width: 80%; height: 80%; }
+#imgscn, #imgmic {width: 65%; height: 65%;}
+#imgstl {width: 40%; height: 40%; }
+#imgspk, #imghdp {width: 50%; height: 50%; }
+
+#Diff_Prd {text-align: center; width: 40%;}
+
+#events {font-size: 120%; float: left; width: 20%; padding: 20px; margin: 10px;}
+
+aside {float: right; width: 25%;  font-size: 110%; text-align: justify; border: 4px blue dashed; background: white;
+	   padding: 0px 25px 15px 25px; margin: 60px 20px 50px 30px; font-size: 110%; text-align: justify;
+	   box-shadow: 20px 20px 10px #aaaaaa; }
+
+/*____________________________________________________________________________________________________________________________*/
+
+/*
+The below block of code is the CSS Styling used specifically in enquire.html */
+
+
+fieldset {padding : 5px ; margin: 15px;}
+legend {text-indent: 1em; font-weight: bold; font-size: 115% ;}
+fieldset label {margin: 0px 5px;}
+input,select {font-size: 100%;}
+
+.smallfield {float: left;}
+#cntc {float: left; width: 62%;}
+.app{clear: both;}
+
+#charge {float: right; width: 25%;  font-size: 110%; text-align: justify; border: 4px blue dashed; background: white;
+	   padding: 0px 25px 15px 25px; margin: 20px 30px 25px 20px; font-size: 110%; text-align: center;
+	   box-shadow: 20px 20px 10px #aaaaaa; }
+
+#brandy {float: right; width: 25%;  font-size: 110%; text-align: justify; border: 4px rgb(185,0,0) dashed; background: white;
+	   	padding: 0px 25px 15px 25px; margin: 20px 30px 50px 20px; font-size: 110%; text-align: center;
+	    box-shadow: 20px 20px 10px #aaaaaa; display: none;}
+#brandy h3{color: blue;}
+
+#dis_b{margin: 5px; padding: 5px; background-color: rgb(192,192,192);}
+
+#satisfaction {text-align: center; font-size: 160%;}
+.emoji_feed {display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+.item {width: 90px; height: 90px; display: flex; justify-content: center;align-items: center; user-select: none;}
+.emoji5 {display: none;}
+.emoji5 ~ span {font-size: 2rem; filter: grayscale(100);cursor: pointer;transition: 0.3s;}
+.emoji5:checked ~ span {filter: grayscale(0);font-size: 3rem;}
+
+.buttonn {font-weight: bold; padding: 10px; background-color: rgb(126,223,251); clear: both;}
+
+/*____________________________________________________________________________________________________________________________*/
+
+/*
+The below block of code is the CSS Styling used specifically in about.html */
+
+dl {width: 100%; overflow: hidden; padding: 5px; margin: 5px;}
+dt {float: left; width: 20%; padding: 5px; margin-bottom: 7px ; background :rgb(55,91,147); border: solid 3px black; color: rgb(112,233,71); font-weight: bold;}
+dd {float: left; width: 70%; padding: 5px; margin-bottom: 7px ; background :rgb(90,204,249);border: solid 3px black;}
+
+#me {float:right; padding: 20px ; border: double 10px; background: white;}
+#name {font-weight: bold; text-align: center; width: 100%;}
+
+.CWA {background-color: #f19fca;}
+.CLE {background-color: #59c6c7;}
+.TNE {background-color: #cccb9e;}
+.PRG {background-color: #cbcdfb;}
+
+.info {float:left; font-size: 120%; padding: 10px 20px; margin: 20px; border: 4px dotted black;}
+#abt_fz, #favthings {width:20%;}
+#Hometown {width: 40%;}
+
+/*____________________________________________________________________________________________________________________________*/
+
+/*
+The below block of code is the CSS Styling used specifically in fix_order.php */
+
+#errors {margin-left: 10px; padding: 10px;}
+
+/*____________________________________________________________________________________________________________________________*/
+
+/*
+The below block of code is the CSS Styling used specifically in fix_order.php */
+p.logout {text-align: right; color: #0645AD;}
+.login_head {text-align: center;}
+#login_form {width: 30%; margin-left: auto; margin-right: auto; background-color: #91918e;}
+#login_buttonn {font-weight: bold; padding: 10px; background-color: rgb(126,223,251); margin-left: auto; margin-right: auto;}
+.login_button {text-align: center;}
